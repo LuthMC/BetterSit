@@ -8,7 +8,7 @@ use pocketmine\math\Vector3;
 use pocketmine\block\Slab;
 use pocketmine\block\Stair;
 use pocketmine\player\Player;
-use BetterSit\Main;
+use Luthfi\BetterSit\Main;
 
 class EventListener implements Listener {
 
