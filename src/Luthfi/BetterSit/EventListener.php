@@ -32,7 +32,7 @@ class EventListener implements Listener {
             $this->sitOnBlock($player, $block);
         } else {
             foreach ($player->getWorld()->getPlayers() as $target) {
-                if ($player !== $target && $player->distance($target) <= 2) {
+                if ($player !== $target && $this->calculateDistance($player, $target) <= 2) {
                     $event->cancel();
                     $this->sitOnPlayer($player, $target);
                     break;
@@ -70,5 +70,11 @@ class EventListener implements Listener {
                 $this->sittingPlayer->teleport($pos);
             }
         }, 1);
+    }
+
+    private function calculateDistance(Player $player1, Player $player2): float {
+        $pos1 = $player1->getPosition();
+        $pos2 = $player2->getPosition();
+        return $pos1->distance($pos2);
     }
 }
