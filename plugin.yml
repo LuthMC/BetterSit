@@ -1,0 +1,11 @@
+name: BetterSit
+main: Luthfi\BetterSit\Main
+version: 1.0.0
+api: 5.0.0
+author: Luthfi
+description: A plugin that allow players to sit.
+
+permissions:
+  bettersit.sittoggle:
+    description: Allows the player to sit toggle
+    default: true
