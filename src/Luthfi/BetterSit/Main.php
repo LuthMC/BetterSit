@@ -4,8 +4,8 @@ namespace Luthfi\BetterSit;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
-use BetterSit\commands\SitToggleCommand;
-use BetterSit\listeners\EventListener;
+use Luthfi\BetterSit\SitToggleCommand;
+use Luthfi\BetterSit\EventListener;
 
 class Main extends PluginBase implements Listener {
 
