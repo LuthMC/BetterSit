@@ -14,7 +14,7 @@ class SitToggleCommand extends Command {
     public function __construct(Main $plugin) {
         parent::__construct("sittoggle", "Toggle sit mode", "/sittoggle", []);
         $this->plugin = $plugin;
-        $this->setPermission("bettersit.command.sittoggle");
+        $this->setPermission("bettersit.sittoggle");
     }
 
     public function execute(CommandSender $sender, string $label, array $args): void {
